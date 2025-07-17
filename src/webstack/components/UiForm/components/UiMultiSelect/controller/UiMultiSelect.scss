@@ -1,0 +1,13 @@
+.ui-multi-select {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-5);
+  align-items: center;
+width: 100%;
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-9);
+  }
+
+}

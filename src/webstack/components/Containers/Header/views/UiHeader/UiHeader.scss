@@ -1,0 +1,51 @@
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeInSubHeader {
+        from{ opacity: 0; }
+        to{ opacity: 1; }
+}
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    line-height: 1;
+    z-index: 1;
+    color: var(--primary-70);
+    font-size: var(--s-element);
+    min-width: max-content;
+    text-transform: uppercase;
+    user-select: none;
+    opacity: 0;
+    animation: fadeInSubHeader 4s ease-in forwards;
+    line-height: 1;
+  &--title {
+    @extend .d-flex;
+    min-height: var(--s-element);
+    --ui-icon-size: var(--s-1);
+    filter: blur(1px);
+    --ui-icon-color: var(--primary-70);
+    gap: var(--s-10);
+
+    // Responsive font-size based on header width
+    font-size: clamp(1rem, 5vw, 4rem);
+  }
+    &--sub-title {
+        text-transform: capitalize;
+        right: 0;
+        &-set{
+            transform: translate(50%, 50%);
+            position: absolute;
+        }
+        font-size: var(--s-1);
+        color: var(--gray-40);
+        opacity: .8;
+        text-shadow: -2px -2px 5px  var(--gray-70);
+        line-height: 1;
+        z-index: 2;
+    }
+}

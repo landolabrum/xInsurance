@@ -1,0 +1,63 @@
+.stream-assets {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  &__video-layer {
+    z-index: 1;
+  }
+
+  &__placeholder {
+    background-color: hotpink;
+    height: 100%;
+  }
+
+  &__overlay {
+    position: absolute;
+    z-index: 10;
+    max-width: 300px;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    border-radius: 0.75rem;
+    font-family: 'Helvetica Neue', sans-serif;
+
+    &--top-left {
+      top: 1rem;
+      left: 1rem;
+    }
+
+    &--top-right {
+      top: 1rem;
+      right: 1rem;
+    }
+
+    &--bottom-left {
+      bottom: 1rem;
+      left: 1rem;
+    }
+
+    &--bottom-right {
+      bottom: 1rem;
+      right: 1rem;
+    }
+
+    &--top-full {
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      border-radius: 0 0 0.75rem 0.75rem;
+    }
+
+    &--bottom-full {
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      border-radius: 0.75rem 0.75rem 0 0;
+    }
+  }
+}

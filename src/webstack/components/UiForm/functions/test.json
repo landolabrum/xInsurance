@@ -1,0 +1,126 @@
+{
+    // "id": "cus_QTuMJGBGispKDe",
+    // "object": "customer",
+    // "address": {
+    //     "city": "Murray",
+    //     "country": "US",
+    //     "line1": "650 Brittany Dr",
+    //     "line2": "",
+    //     "postal_code": "84107",
+    //     "state": "UT"
+    // },
+    // "balance": 0,
+    // "created": 1721079277,
+    // "currency": null,
+    // "default_source": null,
+    // "delinquent": false,
+    // "description": null,
+    "discount": null,
+    "email": "admin@deepturn.com",
+    "invoice_prefix": "5375521B",
+    "invoice_settings": {
+        "custom_fields": null,
+        "default_payment_method": null,
+        "footer": null,
+        "rendering_options": null
+    },
+    "livemode": true,
+    "metadata": {
+        "merchant": {
+            "url": "http://localhost:3000",
+            "name": "nirvana-energy",
+            "mid": "nirv1",
+            "stripeId": "acct_1OWy0fE8XAGZDdpK"
+        },
+        "user": {
+            "address": null,
+            "clearance": 1,
+            "password_token": null,
+            "password": "burrito",
+            "email": "admin@deepturn.com",
+            "email_verified": true,
+            "type": "customer",
+            "devices": [
+                {
+                    "wan": "104.28.192.150",
+                    "lan": "523f5ebc-d1b3-422e-9914-7e40a3514a06.local",
+                    "navigator": {
+                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+                        "platform": "MacIntel",
+                        "language": "en-US",
+                        "languages": [
+                            "en-US",
+                            "en",
+                            "ru",
+                            "la",
+                            "zh",
+                            "zh-CN"
+                        ],
+                        "cookieEnabled": true,
+                        "brands": [
+                            {
+                                "brand": "Not/A)Brand",
+                                "version": "8"
+                            },
+                            {
+                                "brand": "Chromium",
+                                "version": "126"
+                            },
+                            {
+                                "brand": "Google Chrome",
+                                "version": "126"
+                            }
+                        ],
+                        "mobile": false
+                    },
+                    "connection": {
+                        "effectiveType": "4g",
+                        "downlink": 10,
+                        "rtt": 50,
+                        "saveData": false,
+                        "type": "4g"
+                    },
+                    "device": {
+                        "memory": 8,
+                        "hardwareConcurrency": 10,
+                        "screen": {
+                            "width": 3360,
+                            "height": 1890,
+                            "colorDepth": 30
+                        },
+                        "window": {
+                            "innerWidth": 1660,
+                            "innerHeight": 812
+                        }
+                    },
+                    "permissions": {
+                        "geolocation": "granted",
+                        "notifications": "prompt",
+                        "camera": "prompt",
+                        "microphone": "prompt",
+                        "persistent_storage": null
+                    },
+                    "device_settings": null,
+                    "authorization_data": null,
+                    "cookies": null,
+                    "created": null
+                }
+            ],
+            "social": [],
+            "server_url": "tiktok.soy"
+        }
+    },
+    "name": "admin quote",
+    "next_invoice_sequence": 1,
+    "phone": null,
+    "preferred_locales": [],
+    "shipping": null,
+    "tax_exempt": "none",
+    "test_clock": null,
+    "methods": {
+        "object": "list",
+        "data": [],
+        "has_more": false,
+        "url": "/v1/payment_methods"
+    }
+}

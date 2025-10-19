@@ -211,7 +211,7 @@ html {
 body {
   font-family: var(--font-family,"Play"), sans-serif;
   margin: 0;
-  /* background: var(--body); */
+  background: var(--body);
   color: var(--color);
   font-size: var(--s-5);
   font-weight: 300;
@@ -248,7 +248,6 @@ body {
 }
 *::-webkit-scrollbar:hover{
     width: var(--s-1);
-
   }
 *::-webkit-scrollbar-thumb {
   background-color: var(--gray-70-o);
@@ -1084,7 +1083,8 @@ a:-webkit-any-link {
   position: fixed;
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding: 15px 15px 70px;
+  max-width: 1260px;
   background-color: #00000070;
   color: #0f9;
   border-radius: 5px;
@@ -1102,7 +1102,21 @@ a:-webkit-any-link {
   border-style: outset;
   border-color: var(--gray-50-o) var(--gray-100-o) var(--gray-90-o) var(--gray-20-o);
 }
-
+.c-primary-10{
+  color:var(--primary-10)
+}
+.c-primary-30{
+  color:var(--primary-30)
+}
+.c-primary-50{
+  color:var(--primary-50)
+}
+.c-primary-70{
+  color:var(--primary-70)
+}
+.c-primary-90{
+  color:var(--primary-90)
+}
 .gray-10 {
   color: var(--gray-10);
 }

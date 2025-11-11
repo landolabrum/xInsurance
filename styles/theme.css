@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@300;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&display=swap'); */
 
 @font-face {
   font-family: Game;
@@ -12,7 +12,17 @@
   src: url("/fonts/papaya/sbb-papaya.otf") format("opentype");
   font-style: normal;
 }
-
+@font-face {
+  font-family: Gear6;
+  src: url("/fonts/gear6/Gear6_Clean.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Gear6;
+  src: url("/fonts/gear6/Gear6_Whitegrad.otf") format("opentype");
+  font-weight: 300;
+}
 @font-face {
   font-family: Nabla;
   src: url("/fonts/Nabla/Nabla-Regular.ttf") format("opentype");
@@ -26,6 +36,7 @@
 }
 
 @font-face {
+
   font-family: PlexLight;
   src: url("/fonts/IBMPlexMono/IBMPlexMono-Light.ttf") format("opentype");
   font-style: normal;
@@ -53,8 +64,66 @@
     url("/fonts/freight/freight-sans-medium.woff") format("woff");
 }
 
-/* ===== Decimal Core (for body/UI) ===== */
+/* ===== AvantGarde Family ===== */
+/* Book / Normal (400) */
+@font-face {
+  font-family: "AvantGarde";
+  src:
+    url("/fonts/AvantGarde/fonnts.com-AVGARDN_2.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
 
+/* Medium (500) */
+@font-face {
+  font-family: "AvantGarde";
+  src:
+    url("/fonts/AvantGarde/fonnts.com-AVGARDM_2.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+/* Medium Italic (500 italic) */
+@font-face {
+  font-family: "AvantGarde";
+  src:
+    url("/fonts/AvantGarde/fonnts.com-AVGARDMI_2.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+}
+
+/* Demi/Bold (700) */
+@font-face {
+  font-family: "AvantGarde";
+  src:
+    url("/fonts/AvantGarde/fonnts.com-AVGARDD_2.ttf") format("truetype"),
+    url("/fonts/AvantGarde/fonnts.com-AVGARDD2.otf") format("opentype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* Demi/Bold Italic (700 italic) */
+@font-face {
+  font-family: "AvantGarde";
+  src:
+    url("/fonts/AvantGarde/fonnts.com-AVGARDDO_2.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* Bold (900) */
+@font-face {
+  font-family: "AvantGarde";
+  src: url("/fonts/AvantGarde/AvantGardeBold.otf") format("opentype");
+  font-weight: 900;
+}
+
+/* ===== Decimal Core (for body/UI) ===== */
 /* Light (300) */
 @font-face {
   font-family: "Decimal";
@@ -74,16 +143,6 @@
   font-style: normal;
   font-display: swap;
 }
-@font-face {
-  font-family: "Decimal";
-  src:
-    url("/fonts/Decimal/Decimal-Medium.woff2") format("woff2"),
-    url("/fonts/Decimal/Decimal-Medium.woff")  format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
 /* ===== Decimal TD (display cut, opt-in only) ===== */
 @font-face {
   font-family: "Decimal TD";
@@ -92,6 +151,15 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Decimal";
+  src:
+    url("/fonts/Decimal/Decimal-Medium-TD.woff")  format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 
 :root {
@@ -141,9 +209,21 @@
   --yellow-90: #9a6b14;
   --yellow-90-o: #9a6b1470;
 
+  /* ===== Orange (with -o variants) ===== */
+  --orange-10: #ffe4cc;
+  --orange-10-o: #ffe4cc70;
+  --orange-20: #ffc999;
+  --orange-20-o: #ffc99970;
+  --orange-30: #ffb266;
+  --orange-30-o: #ffb26670;
   --orange-50: #ff9900;
   --orange-50-o: #ff990070;
+  --orange-70: #cc7a00;
+  --orange-70-o: #cc7a0070;
+  --orange-90: #995c00;
+  --orange-90-o: #995c0070;
   --orange-o: #ff990070;
+
 
   --red-10: #ef4444;
   --red-10-o: #ef444470;
